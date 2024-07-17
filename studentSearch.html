@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Search</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/delete-student.css"> </head>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <script>
+        // Check if the user is authenticated
+        if (!localStorage.getItem('authenticated')) {
+            window.location.href = 'index.html';
+        }
+    </script>
+<body>
+    <button id="back-btn">BACK</button>
+    <h1>Student Search</h1>
+    <div class="input-box">
+        <input type="text" id="search" placeholder="Enter Student Number or Room Number">
+        <button id="searchButton">Search</button>
+        <div id="result" style="color: rgb(255, 0, 0); text-align: center; margin-top: 30px; font-size: 30px;" ></div>
+    </div>
+    <script src="js/findStudent.js"></script>
+
+</body>
+</html>
+

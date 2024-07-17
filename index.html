@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Login Form -->
+        <div id="loginDiv">
+            <form id="loginForm">
+                <h1>Login</h1>
+                <link rel="icon" href="img/logo.png" type="image/x-icon">
+                <div class="input-box">
+                    <input type="text" placeholder="Username" id="username" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="password" required>
+                </div>
+                <input type="submit" class="btn" value="Login">
+                <div id="message" style="display: none;"></div>
+            </form>
+        </div>
+
+        <!-- Registration Form and User Management -->
+        <div id="registerDiv" style="display: none;">
+            <form id="registerForm">
+                <h1>Register</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" id="newUsername" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="newPassword" required>
+                </div>
+                <div class="input-box">
+                    <select id="role" required>
+                        <option value="admin">admin</option>
+                        <option value="management">management</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn" value="Register">
+                <div id="registerMessage"></div>
+            </form>
+            
+            <p>
+                <div id="leave" class="leave">
+                    <button href="#" id="logout">Logout</button>
+                    <button href="#" id="home">Home</button>
+                </div>
+                
+            </p>
+        </div>   
+    </div>
+    <div id="usrMngmt" style="display: none;" class="usrMngmt">
+        <div id="userManagement">
+            <h2 class="usr-mngmt">Users Active</h2>
+            <ul id="userList"></ul>
+            <!-- <ul id="userBtnList"></ul> -->
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

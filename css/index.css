@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    background: black;
+  }
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: url(image1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.btn{
+    width: 90%;
+    height: 90%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.content{
+    text-align: center;
+    
+}
+
+.content .btn{
+    margin-top: 20px;
+}
+
+.content h2{
+    font: 50px;
+    color: #fff;
+}
+
+/*.button-container {
+    text-align: center;
+    margin-top: 20px;
+}*/
+#button-container button {
+    margin-bottom: 10px;
+}
+
+#white-card button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#storage-card button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card,
+.card.hidden {
+padding: 20px;
+margin-top: 20px;
+}
+
+.card.hidden {
+display: none;
+}
+
+#logout-btn{
+    background-color: white;
+    color: black;
+}

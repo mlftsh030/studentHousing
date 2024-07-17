@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  html{
+    background-color: black;
+  }
+  
+  .input-box input{
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    text-align: center;
+}
+  .input-box{
+    text-align: center;
+  }
+  
+  h2{
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: -55px;
+    text-align: center;
+  }
+  h1{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-box label{
+    color: #fff;
+   
+  }
+  
+  button{
+    background: rgb(85, 78, 78);
+    border: none;
+    outline: none;
+    border: 2px solid rgb(26, 73, 71);
+    font-size: 16px;
+    color: #000000;
+    padding: 20px;
+  
+  }
+  #back-btn{
+    font-size: 10px;
+    margin: 15px;
+    width: 60px;
+    height: 30px;
+    padding: 0px;
+}

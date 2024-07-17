@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.1/remixicon.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/white-card.css">
+  <title>Enroll New Student</title>
+  <img src="img/logo.png" alt="Logo" style=" position: absolute; top: 10px; right: 10px; width: 50px;">
+  <script>
+    // Check if the user is authenticated
+    if (!localStorage.getItem('authenticated')) {
+        window.location.href = 'login.html';
+    }
+</script>
+</head>
+<body>
+  <h2 style="color: white; text-align: center; margin-top: 30px; font-size: 30px;">Enroll New Student</h2>
+  <form id="student-form" class="max-length island">
+    <div id="grid0" class="grid1">
+      <h2>Student Personal Information</h2>
+
+      <label for="surname">Surname</label>
+      <input type="text" id="surname" name="surname" placeholder ="Enter Surname" required aria-describedby="surname-error">
+
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" placeholder ="Enter First Name<" required aria-describedby="first-name-error">
+
+      <label for="id-passport-no">ID/Passport Number</label>
+      <input type="text" id="id-passport-no" name="id-passport-no" placeholder ="Enter your Id/Passport" required aria-describedby="id-passport-no-error">
+
+      <label for="date-of-birth">Date of Birth</label>
+      <input type="date" id="date-of-birth" name="date-of-birth"  pattern="\d(4)-\d(2)-\d(2)" required aria-describedby="date-of-birth-error">
+
+      <label for="student-no">Student Number</label>
+      <input type="text" id="student-no" name="student-no" placeholder ="Student Number" required aria-describedby="student-no-error">
+
+    </div>
+    
+    <div id="grid1">
+      <h2>&nbsp;&nbsp;Student Contact Information&nbsp;</h2>
+      <label for="Scell-no" class="laballl">Cellphone Number</label>
+      <input type="tel" id="Scell-no" name="Scell-no" placeholder ="Enter Cellphone" required aria-describedby="Scell-no-error">
+
+      <label for="stuEmail" id="emailll">E-Mail</label>
+      <input type="email" id="stuEmail" name="stuEmail" placeholder ="Enter E-Mail" required aria-describedby="stuEmail-error">
+
+      <label for="stuEmail" id="emailll1">&nbsp;</label>
+      <input type="email" id="stuEmail1" name="stuEmail" aria-describedby="stuEmail-error" readonly>
+
+      <label for="stuEmail" id="emailll2">&nbsp;</label>
+      <input type="email" id="stuEmail2" name="stuEmail" aria-describedby="stuEmail-error" readonly>
+
+      <label for="stuEmail" id="emailll3">&nbsp;</label>
+      <input type="email" id="stuEmail3" name="stuEmail" aria-describedby="stuEmail-error" readonly>
+      
+
+    </div>
+
+    <div id="grid2">
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enrollment Information&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+      <label for="date-of-first-entry">Date of First Entry</label>
+      <input type="date" id="date-of-first-entry" name="date-of-first-entry" required aria-describedby="date-of-first-entry-error">
+
+      <label for="room-number">Room Number</label>
+      <input type="text" id="room-number" name="room-number" placeholder ="Enter Room Number" required aria-describedby="room-number-error">
+
+    </div>
+
+    <div id="grid3">
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Academic Information&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+      <label for="Course">Course / Degree</label>
+      <input type="text" id="Course" name="Course"  placeholder =" Enter Course or Degree." required aria-describedby="Course-error">
+
+      <label for="year-of-study">Year of study</label>
+      <input type="text" id="year-of-study" name="year-of-study"  placeholder =" Enter curent year enrolled"required aria-describedby="year-of-study-error">
+
+    </div>
+
+    <div id="grid4">
+      <h2>&nbsp;&nbsp;Student Medical Information&nbsp;</h2>
+      <label for="medical-problems">Medical Problems (e.g., allergies, asthma, etc.)</label>
+      <input type="text" id="medical-problems" name="medical-problems" placeholder =" Enter your Medical Problems" required aria-describedby="medical-problems-error">
+
+      <label for="medical-Aid">Medical Aid Number</label>
+      <input type="text" id="medical-Aid" name="medical-Aid" placeholder =" Enter Medical Aid Number." required aria-describedby="medical-Aid-error">
+
+      <label for="Dr">Dr/GP in Cape Town</label>
+      <input type="text" id="Dr" name="Dr" placeholder =" Enter Dr/GP's name." required aria-describedby="Dr-error">
+
+      <label for="Dr-tel">Dr/GP Telephone Number</label>
+      <input type="text" id="Dr-tel" name="Dr-tel" placeholder =" Enter Dr/GP's number." required aria-describedby="Dr-tel-error">
+
+    </div>
+
+    <div id="grid5">
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Religion Information&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+      <label for="religion">Religion</label>
+      <input type="text" id="religion" name="religion" placeholder =" Enter Your religion." required aria-describedby="religion-error">
+
+      <label for="stuEmail" id="emailll1">&nbsp;</label>
+      <input type="email" id="stuEmail1" name="stuEmail"  aria-describedby="stuEmail-error" readonly>
+
+      <label for="stuEmail" id="emailll2">&nbsp;</label>
+      <input type="email" id="stuEmail2" name="stuEmail" aria-describedby="stuEmail-error" readonly>
+
+      <label for="stuEmail" id="emailll3">&nbsp;</label>
+      <input type="email" id="stuEmail3" name="stuEmail" aria-describedby="stuEmail-error" readonly>
+
+    </div>
+
+    <div id="grid6">
+      <h2>&nbsp;Parent/Guardian Information&nbsp;</h2>
+      <label for="p-name">Name & Surname</label>
+      <input type="text" id="p-name" name="p-name" placeholder =" Enter Parent/Guardian Name & Surname." required aria-describedby="p-name-error">
+
+      <label for="p-cell">Cell Number</label>
+      <input type="text" id="p-cell" name="p-cell" placeholder =" Enter Parent/Guardian Cell Number." required aria-describedby="p-cell-error">
+
+      <label for="p-email">E-mail</label>
+      <input type="text" id="p-email" name="p-email" placeholder =" Enter Parent/Guardian E-mail." required aria-describedby="p-email-error">
+ 
+      <label for="p-Address">Address</label>
+      <input type="text" id="p-Address" name="p-Address" placeholder =" Enter Parent/Guardian Address." required aria-describedby="p-Address-error">
+
+    </div>
+
+    <div id="grid7">
+      <h2>&nbsp;&nbsp;Family/Friend in Cape Town&nbsp;</h2>
+      <label for="ff-name">Name & Surname</label>
+      <input type="text" id="ff-name" placeholder =" Enter Family/Friend Name & Surname." name="ff-name" required aria-describedby="ff-name-error">
+  
+      <label for="ff-cell">Cell Number</label>
+      <input type="text" id="ff-cell"  placeholder =" Enter Family/Friend Cell Number." name="ff-cell" required aria-describedby="ff-cell-error">
+    
+      <label for="ff-email">E-mail</label>
+      <input type="text" id="ff-email" placeholder =" Enter Family/Friend E-mail." name="ff-email" required aria-describedby="ff-email-error">
+   
+      <label for="ff-Address">Address</label>
+      <input type="text" id="ff-Address" name="ff-Address"  placeholder =" Enter Family/Friend Address." required aria-describedby="ff-Address-error">
+   
+    </div>
+
+    <div id="grid8">
+      <h2><label for="student-picture">Student Picture</label></h2>
+      <input type="file" id="student-picture" name="student-picture" required accept="image/*" capture="camera">
+      <button type="submit" id="bbtn">Submit</button>
+    </div>
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="js/QR.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+</body>
+</html>
