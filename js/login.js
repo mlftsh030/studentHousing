@@ -1,6 +1,6 @@
 // Initialize sample users array if not already present in localStorage
 const users = JSON.parse(localStorage.getItem('users')) || [
-  { username: "mlftsh030", password: "Batloung1966*", role: "admin" },
+  { username: "tester", password: "12345*", role: "admin" },
   { username: "mlftsh030", password: "Batloung1966", role: "management" },
   { username: "mlilo", password: "12345", role: "management" }
 ];
